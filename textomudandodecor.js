@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import './App.css'
 
 export default function App(){
 const [cor,setCor]=useState(1)
@@ -30,7 +29,7 @@ setInterval(mudaCor,1000)
   return( 
     <>
     <h1 style={retCor(cor)}>Gean Bandeira</h1>
-    <button onClick={()=>mudaCor()}>Muda Cor</button>
+    /*<button onClick={()=>mudaCor()}>Muda Cor</button>*/
     </>
     
   )
