@@ -1,5 +1,26 @@
 //useState: Para gerenciar o estado dentro de um componente.
 //useEffect: Para realizar efeitos colaterais (como chamadas de API) em componentes funcionais.
 //useContext: Para gerenciar estado global com contexto.
-useReducer: Para estados mais complexos, semelhante ao Redux em miniatura.
-useRef: Para acessar elementos do DOM ou valores persistentes entre renderizações.
+//useReducer: Para estados mais complexos, semelhante ao Redux em miniatura.
+//useRef: Para acessar elementos do DOM ou valores persistentes entre renderizações.
+
+
+import React, { useState, useEffect } from 'react';
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  }, [count]);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
