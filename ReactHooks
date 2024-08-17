@@ -1,0 +1,5 @@
+//useState: Para gerenciar o estado dentro de um componente.
+//useEffect: Para realizar efeitos colaterais (como chamadas de API) em componentes funcionais.
+//useContext: Para gerenciar estado global com contexto.
+useReducer: Para estados mais complexos, semelhante ao Redux em miniatura.
+useRef: Para acessar elementos do DOM ou valores persistentes entre renderizações.
