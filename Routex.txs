@@ -2,3 +2,18 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Login, Register, Dashboard} from './pages/';
 import {useAuth} from './context/AuthContext';
+
+const AppRoutes = () => {
+  const {user} = useAuth();
+
+  return (
+    <Router>
+      <Routes>
+        <Route />
+      </Routes>
+    </Router>
+
+  )
+
+
+}
